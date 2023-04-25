@@ -1,0 +1,20 @@
+# Criando projeto
+  - npx create-next-app@latest
+
+  # Configurando projeto
+    -  Ok to proceed? (y) -> y
+    - What is your project named? -> web
+
+# Instalando typescript
+  - yarn add typescript @types/react @types/node -D
+  Obs: Quando executar o comando yarn dev, irá criar automaticamente o arquivo tsconfig.json
+
+# executar aplicação em ambiente de desenvolvimento
+  - yarn dev
+
+#Instalar dependencia de autenticação auth0.
+ - yarn add @auth0/nextjs-auth0
+
+ #Gerar AUTH0_SECRET e colocar no arquivo .env.local
+  - openssl rand -hex 32
+

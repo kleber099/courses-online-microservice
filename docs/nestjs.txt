@@ -1,0 +1,76 @@
+# Instalação nestjs-client
+  - npm i -g @nestjs/cli
+
+#Criando projeto
+  - nest new <project-name>
+
+ # Configurando projeto
+   - Which package manager would you ❤️  to use? -> npm
+
+# Executar aplicação em ambiente de desenvolvimento
+  - npm run start:dev
+
+# Generation permite realizar geração automatica de arquivos.
+  - help
+    - nest generate -h
+
+  - geração de modulo de banco de dados
+    - nest generate module database
+
+# Instalar dependencia para que o nest consigo entender o arquivo .env
+  - npm i @nestjs/config
+
+# Autenticação
+  - Criar arquivo de autenticação que é midleware para validar o token e a autenticação do usuário
+    - nest generate guard authorization
+
+  - Instalação dependencias do auth0
+    - npm i express-jwt jwks-rsa
+
+# Criar um novo controller
+ - nest generate controller test
+
+ # Criar um novo service
+  - nest generate service prisma
+
+ # Prisma
+  - Instalar a dependencia de dev
+    - npm i prisma -D
+
+  - Instalar prima client
+   - npm i @prisma/client
+
+  - Iniciar o prisma
+   - npx prisma init
+
+  - Executar migrates
+   - npx prisma migrate dev
+
+  -Executar prima client
+   - npx prisma studio
+
+
+#Docker
+ - instalar docker e docker-componse
+
+ - Verificar containers estão rodando
+  - docker ps
+
+- Verificar containers que estão na maquina
+  - docker ps -a
+
+- Rodar container a partir de um docker file
+ - docker-compose up -d
+
+
+#Graphql
+ - instalar dependencias
+  - npm i @nestjs/graphql @nestjs/apollo graphql @apollo/server-express
+
+-Acessar client graphql
+ -http://localhost:<porta>/graphql
+ exemplo:
+  - http://localhost:3333/graphql
+
+
+
