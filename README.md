@@ -1,4 +1,4 @@
-# Ignite Lab 01
+# Courses Online Microservices
 
 - NestJS
 - GraphQL
