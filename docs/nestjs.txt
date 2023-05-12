@@ -49,6 +49,13 @@
   -Executar prima client
    - npx prisma studio
 
+  - Extensão
+    - Prisma
+
+  - Configuração vscode
+   "[prisma]": {
+    "editor.formatOnSave": true
+  } 
 
 #Docker
  - instalar docker e docker-componse
@@ -71,6 +78,12 @@
  -http://localhost:<porta>/graphql
  exemplo:
   - http://localhost:3333/graphql
+
+
+# Pacote
+ -  slugify
+ Pacote para criar slug baseado em  nome
+ - npm i slugify
 
 
 
